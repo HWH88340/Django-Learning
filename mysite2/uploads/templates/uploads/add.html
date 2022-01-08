@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+</head>
+<body>
+    <h1>上传用户头像和简历</h1>
+
+    <form action="{% url 'uploads:add' %}"  method="post" enctype="multipart/form-data" >
+        {% csrf_token %}
+        <lable for="username">用户名：</lable>
+        <input type="text" name="username" id="username" /><br>
+        <lable for="img">用户头像：</lable>
+        <input type="file" name="img" id="img" /><br>
+        <lable for="introduce">用户简历：</lable>
+        <input type="file" name="introduce" id="introduce" /><br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

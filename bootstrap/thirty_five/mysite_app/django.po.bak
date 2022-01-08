@@ -1,0 +1,255 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-31 02:20+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/about.html:11
+msgid "About us"
+msgstr "关于我们"
+
+#: templates/about.html:13
+msgid "Along the way, have you good..."
+msgstr "一路走来，有你精彩……"
+
+#: templates/about.html:22
+msgid "The development course"
+msgstr "发展历程"
+
+#: templates/about.html:25
+msgid ""
+"Jake and the guest room was established in May 2012, is a group of software "
+"and hardware of XX region technical talents and design talents by the folk "
+"non-profit organizations (ngos), is one of the earliest established a guest "
+"space in China. Development up to now, has become one of the largest "
+"passenger organization in China, was rated as jiangsu provincial the space, "
+"xx city municipal ngos. Our strength has been committed to promote xx "
+"district private science and technology and the development of cultural "
+"innovation, integration of talent and resources advantages, encourage "
+"inventions and technological innovation, encourage knowledge sharing and "
+"artistic creation. We encourage more research and the practical products and "
+"projects, the formation of the intellectual property rights and patents. As "
+"of December 2015, the number of our members are more than 2000 people, the "
+"core members of more than 300 people. Members of the professional direction "
+"of the computer, electronics, electrical, construction, design, art, "
+"machinery manufacturing, management, economy, and many other areas, members "
+"of the distribution throughout the country, involving students, senior "
+"engineer, a professor at the university of talent in many aspects, "
+"designers, famous experts and elite. In addition, we also have more than "
+"5000 square meters and customer base, and equipped with complete processing "
+"and production equipment, such as 3 d printing, laser engraving machine, CNC "
+"machine tools, welding machine, etc., to help create geeks to turn their "
+"ideas into reality."
+msgstr " 吉克创客空间成立于 2012年 5月，是由XX地区一群软硬件技术人才和设计人才发起的民间非营利性组织（NGO），是中国最早成立的创客空间之一。发展至今，已成为中国最大创客组织之一，被评为江苏省省级众创空间，xx市市级NGO组织。 我们一直致力于推动xx地区民间科技力量和文化创新的发展，整合人才和资源优势，鼓励发明创造和技术创新，鼓励知识分享和艺术创作。我们更鼓励研发实用型产品和项目，形成知识产权和专利。 截至2015 年12月，我们的成员人数超过2000人，核心成员300余人。 成员专业方向涵盖计算机、电子、电力、建筑、设计、艺术、机械制造、管理、经济等诸多领域，成员分布全国各地，涉及在校学生、资深工程师、大学教授、设计师、知名专家等多方面人才和精英。另外，我们还拥有5000多平方米的创客活动基地，并配置了齐全的的加工和制作设备，如3D打印机、激光雕刻机、CNC机床、焊接台等，帮助创客们将自己的想法变成现实。 "
+
+#: templates/about.html:38
+msgid "Join gektek"
+msgstr "加入吉克"
+
+#: templates/about.html:41
+msgid ""
+"We are a by a guest, media, innovation of transboundary team of designers "
+"and engineers. We pursue innovation, practice, to share a guest culture. "
+"Welcome more individuality and creativity, to product, technology, unique "
+"design and art have a try, opinions and skill of the Maker to join. We "
+"firmly believe that the future created by you. Let’s make it！"
+msgstr " 我们是一支由创客、媒体人、设计师和工程师组成的创新跨界团队。我们崇尚创新、实践、分享的创客文化。欢迎更多有个性和创意，对产品、技术、设计和艺术有独特尝试、意见和技艺的Maker加入。 我们坚信，未来由你创造。Let’s make it！ "
+
+#: templates/about.html:53
+msgid "Contact method"
+msgstr "联系方式"
+
+#: templates/about.html:55
+msgid "Address"
+msgstr "地址"
+
+#: templates/about.html:56
+msgid "Postcode"
+msgstr "邮编"
+
+#: templates/about.html:57
+msgid "Phone"
+msgstr "电话"
+
+#: templates/about.html:58
+msgid "Fax"
+msgstr "传真"
+
+#: templates/about.html:62
+msgid "You can fill out the form below to contact us"
+msgstr "您可以填写下方的表单联系我们"
+
+#: templates/about.html:67
+msgid "Your email address"
+msgstr "您的邮箱地址"
+
+#: templates/about.html:73
+msgid "Your subject"
+msgstr "您的标题"
+
+#: templates/about.html:77
+msgid "You want to say"
+msgstr "您想说的内容"
+
+#: templates/about.html:80
+msgid "Submit"
+msgstr "提交"
+
+#: templates/about.html:96
+msgid "Development history"
+msgstr "发展历史"
+
+#: templates/about.html:97
+msgid "Join us"
+msgstr "加入我们"
+
+#: templates/about.html:98
+msgid "Contact us"
+msgstr "联系我们"
+
+#: templates/base.html:29
+msgid "Home"
+msgstr "主页"
+
+#: templates/base.html:30
+msgid "Products"
+msgstr "产品"
+
+#: templates/base.html:31
+msgid "About"
+msgstr "关于"
+
+#: templates/base.html:44
+msgid "All right reserved"
+msgstr "版权所有"
+
+#: templates/case.html:11
+msgid "Applications"
+msgstr "产品应用"
+
+#: templates/case.html:13
+msgid "Success case of products ......"
+msgstr "成功产品案例……"
+
+#: templates/case.html:19
+msgid "Product promotion"
+msgstr "产品宣传"
+
+#: templates/case.html:24
+msgid "Unmanned aerial vehicle"
+msgstr "无人机"
+
+#: templates/case.html:30
+msgid "3D printer"
+msgstr "3D 打印机"
+
+#: templates/case.html:36
+msgid "Arduino"
+msgstr "Arduino"
+
+#: templates/case.html:47
+msgid "Interesting products"
+msgstr "趣味产品"
+
+#: templates/case.html:56
+msgid "Four axis aircraft"
+msgstr "四轴飞行器"
+
+#: templates/case.html:59
+msgid ""
+"Four axis unmanned aerial vehicles, advanced flight control system, "
+"automatic cruise, high-definition camera, hovering."
+msgstr "四轴无人飞行器，高精尖飞控系统，自动巡航，高清摄像，空中悬停。"
+
+#: templates/case.html:74
+msgid ""
+"Print speeds of up to 10 mm/SEC, forming precision high, double color "
+"printing."
+msgstr "打印速度高达10mm/秒，成型精确度高，双色打印。"
+
+#: templates/case.html:89
+msgid ""
+"Originated from Italy, universal wheel, automatic tracking, automatic "
+"obstacle avoidance, flexible and agile."
+msgstr "源自意大利，万向轮，自动循迹，自动避障，灵活敏捷。"
+
+#: templates/case.html:104
+msgid ""
+"The sparrow is small all-sided, rich hardware and software resources, easy "
+"to learn and easy to use."
+msgstr "麻雀虽小五脏俱全，丰富的硬件、软件资源，易学易用。"
+
+#: templates/home.html:40
+msgid "What is the maker"
+msgstr "什么是创客"
+
+#: templates/home.html:41
+msgid "Passion for science and technology group , keen to practice man."
+msgstr "一群酷爱科技，热衷实践的人。"
+
+#: templates/home.html:42
+msgid "We share technology , share ideas for fun."
+msgstr "我们以分享技术，交流思想为乐。"
+
+#: templates/home.html:51
+msgid ""
+"Let us stand on each other's shoulders , the more points higher .Human "
+"industrial civilization , commercial civilization , and of course our own , "
+"is a dramatic change"
+msgstr "让我们站在彼此的肩膀上，越站越高。人类工业文明、商业文明，当然还有我们自己，正在发生巨变。"
+
+#: templates/home.html:62
+msgid " Play is a state : relaxed, comfortable and free."
+msgstr "“玩”是一种状态：放松，惬意，自由。"
+
+#: templates/home.html:63
+msgid ""
+" Play is a practice: continue to mental and physical, but also hands-on ."
+msgstr "“玩”是一种实践：不断要动脑，还要动手。"
+
+#: templates/home.html:64
+msgid ""
+" Play is a way of sharing : play with others , it is more interesting , more "
+"meaningful."
+msgstr "“玩”是一种分享：与他人一起玩，才更有趣，更有意义。"
+
+#: templates/home.html:65
+msgid ""
+" Play is a realm : As more and more people join together to play off the "
+"record , because the world will play  and change."
+msgstr "“玩”是一种分享：与他人一起玩，才更有趣，更有意义。"
+
+#: templates/home.html:76
+msgid "Share happiness"
+msgstr "分享快乐"
+
+#: templates/home.html:78
+msgid "The share as a pleasure."
+msgstr "把分享作为一种乐趣。"
+
+#: templates/home.html:79
+msgid ""
+"Initiative on the basis of respect for the dissemination of knowledge work "
+"together."
+msgstr "尊重首创精神的基础上，为知识的传播一起努力。"
+
+#: templates/home.html:88
+msgid "Creative art field"
+msgstr "创意领域"
+
+#: templates/home.html:90
+msgid "Electronics, machinery , robotics , 3D printing ......"
+msgstr "电子、机械、机器人、3D打印 ……"

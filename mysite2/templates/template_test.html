@@ -1,0 +1,64 @@
+{% load static %}
+{% load humanize%}
+{% load poll_extras %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{#    <ul>#}
+{#    {% for m in outer %}#}
+{#        {% for i in lis %}#}
+{#            <li style="color:{% cycle 'red' 'green' 'yellow' 'blue' %}">#}
+{#                {{ forloop.counter }} -- {{ forloop.counter0 }} -- {{ forloop.first }} -- {{ forloop.last }} --{{ forloop.parentloop }}#}
+{#            </li>#}
+{#        {% endfor %}#}
+{##}
+{#    {% endfor %}#}
+{##}
+{#    </ul>#}
+{#    {% include 'about.html' %}#}
+{##}
+{#    {% lorem %}#}
+{#    <br>#}
+{#    {% lorem 2 p %}#}
+{#    <br>#}
+{#    {% lorem 3 w random %}#}
+{##}
+{#    <br>#}
+{#    It is {% now "jS F Y H:i" %}#}
+{##}
+{#    <br>#}
+{#    <img src="{% static '1.png' %}">#}
+
+{#    <p>{{ 1|apnumber }}</p>#}
+{#    <p>{{ 4|apnumber }}</p>#}
+{#    <p>{{ 10|apnumber }}</p>#}
+{#    <p>{{ 100000|intcomma }}</p>#}
+{#    <p>{{ 30928390|intcomma }}</p>#}
+{#    <p>{{ 3092830090|intword }}</p>#}
+{#    <p>{{ -3292834590|intword }}</p>#}
+{#    {% now "jS F Y H:i" as today %}#}
+{#    <p>{{ today | naturalday }}</p>#}
+{#    <p>{{ yesterday | naturalday }}</p>#}
+{#    <p>{{ time | naturaltime }}</p>#}
+{#    <p>{{ today }}</p>#}
+{#    <p>{{ yesterday }}</p>#}
+{#    <p1>{{ 1 | ordinal }}</p1>#}
+{#    <p1>{{ 2 | ordinal }}</p1>#}
+{#    <p1>{{ 3 | ordinal }}</p1>#}
+{#    <p1>{{ 4 | ordinal }}</p1>#}
+{#    <p1>{{ 5 | ordinal }}</p1>#}
+
+<p>{{ 'asldkfjalskdfsdf' | kill:'f' }}</p>
+<p>{{ 1000 | kill:'f' }}</p>
+<p>{% print_something '飞流直下三千尺' %}</p>
+
+{% show_results 2 %}
+
+</body>
+</html>

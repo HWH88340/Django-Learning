@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-Indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!--Wrapper for slide-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background:#667886;">
+            <img src="{% static 'img/slide1.jpg' %}" style="margin:auto;" alt="First">
+        </div>
+        <div class="item" style="background:#BCB1B9;">
+            <img src="{% static 'img/slide2.jpg' %}" style="margin:auto;" alt="Second">
+        </div>
+        <div class="item" style="background:#1976D3;">
+            <img src="{% static 'img/slide3.jpg' %}" style="margin:auto;" alt="Third">
+        </div>
+    </div>
+
+    <!--Controllor-->
+    <a class="carousel-Control left" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-Control right" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </a>
+</div>
+
+<div class="container">
+    <h1 class="text-center"> 什么是创客 </h1>
+    <h2 class="text-center"> 一群酷爱科技，热衷实践的人。</h2>
+    <h2 class="text-center"> 我们以分享技术，交流思想为乐。</h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/1.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> 创客时代 </h3>
+                    <p>
+                        让我们站在彼此的肩膀上，越站越高。
+                        人类工业文明、商业文明，当然还有我们自己，正在发生巨变。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/2.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> 玩出精彩 </h3>
+                    <p>
+                        “玩”是一种状态：放松，惬意，自由。
+                        “玩”是一种实践：不断要动脑，还要动手。
+                        “玩”是一种分享：与他人一起玩，才更有趣，更有意义。
+                        “玩”是一种境界：当越来越多的人加入创客一起玩时，世界将因“玩”而改变。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/4.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> 分享快乐 </h3>
+                    <p>
+                        把分享作为一种乐趣。
+                        尊重首创精神的基础上，为知识的传播一起努力。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/5.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> 创意领域 </h3>
+                    <p>
+                        电子、机械、机器人、3D打印 ……
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

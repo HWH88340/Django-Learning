@@ -1,0 +1,27 @@
+{% load tz %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% get_current_timezone as TIME_ZONE %}
+
+<form action="/timezone/" method="post">
+    {% csrf_token %}
+    <label for="timezone">选择时区：</label>
+    <select name="timezone">
+        {% for tz in timezones %}
+            <option value="{{ tz }}" {% if tz == TIME_ZONE %} selected {% endif %}>{{ tz }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="设置">
+
+</form>
+
+
+
+</body>
+</html>

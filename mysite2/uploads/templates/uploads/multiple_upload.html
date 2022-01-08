@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multiple</title>
+</head>
+<body>
+    <h1>随意的文件个数</h1>
+    <form enctype="multipart/form-data" action="/uploads/multiple_upload/" method="post">
+        {{ form }}
+        {% csrf_token %}
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

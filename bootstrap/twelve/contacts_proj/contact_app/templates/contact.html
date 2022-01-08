@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contact</title>
+    </head>
+    <body>
+        <form method="POST">
+            查找联系人:<input type="text" name="name" required="required"/>
+            <input type="submit" value="搜索"/>
+        </form>
+        {% if result %}
+            {% for var in result %}
+            <li>{{ var.name }} {{ var.birthday }} {{ var.number }} {{ var.address }}</li>
+            {% endfor %}
+        {% else %}
+            {% if searchname %}
+            <li>未找到联系人:{{ searchname }}</li>
+            {% endif %}
+        {% endif %}
+    </body>
+</html>

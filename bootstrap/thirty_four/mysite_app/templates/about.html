@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+<div class="jumbotron"  style="background:#1976D3; color:#CCC;">
+    <div class="container" >
+        <h2> {% trans "About us" %} </h2>
+        <p>
+        {% trans "Along the way, have you good..." %}
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="history">
+                <h3> ◆ {% trans "The development course" %} </h3>
+                <hr>
+                <p>
+                {% trans "Jake and the guest room was established in May 2012, is a group of software and hardware of XX region technical talents and design talents by the folk non-profit organizations (ngos), is one of the earliest established a guest space in China. Development up to now, has become one of the largest passenger organization in China, was rated as jiangsu provincial the space, xx city municipal ngos. Our strength has been committed to promote xx district private science and technology and the development of cultural innovation, integration of talent and resources advantages, encourage inventions and technological innovation, encourage knowledge sharing and artistic creation. We encourage more research and the practical products and projects, the formation of the intellectual property rights and patents. As of December 2015, the number of our members are more than 2000 people, the core members of more than 300 people. Members of the professional direction of the computer, electronics, electrical, construction, design, art, machinery manufacturing, management, economy, and many other areas, members of the distribution throughout the country, involving students, senior engineer, a professor at the university of talent in many aspects, designers, famous experts and elite. In addition, we also have more than 5000 square meters and customer base, and equipped with complete processing and production equipment, such as 3 d printing, laser engraving machine, CNC machine tools, welding machine, etc., to help create geeks to turn their ideas into reality." %}
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div id="join_us">
+                <h3> ◆ {% trans "Join gektek" %} </h3>
+                <hr>
+                <p>
+                {% trans "We are a by a guest, media, innovation of transboundary team of designers and engineers. We pursue innovation, practice, to share a guest culture. Welcome more individuality and creativity, to product, technology, unique design and art have a try, opinions and skill of the Maker to join. We firmly believe that the future created by you. Let’s make it！" %}
+                </p>
+
+                <!--Button trigger modal-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mymodal">
+                    {% trans "talents wanted" %}
+                </button>
+
+                <!--Modal-->
+                <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledbdy="mymodalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="mymodalLabel">
+                                    {% trans "Job list" %}
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                {% trans "Department" %}
+                                            </th>
+                                            <th>
+                                                {% trans "Postion" %}
+                                            </th>
+                                            <th>
+                                                {% trans "Responsibilities" %}
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                R&D
+                                            </td>
+                                            <td>
+                                                Soft Engineer
+                                            </td>
+                                            <td>
+                                                Software development
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    {% trans "Close" %}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div id="contact_us">
+                <h3> ◆ {% trans "Contact method" %} </h3>
+                <hr>
+                <p><strong>{% trans "Address" %}</strong>：xx省xx市xx区xx路xx号</p>
+                <p><strong>{% trans "Postcode" %}</strong>：1234567</p>
+                <p><strong>{% trans "Phone" %}</strong>：010-88888888</p>
+                <p><strong>{% trans "Fax" %}</strong>：010-666666</p>
+            </div>
+
+            <div>
+                <p> <strong>{% trans "You can fill out the form below to contact us" %}</strong> </p>
+                <form method="POST">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon">Email</div>
+                            <input name="Email" type="email" class="form-control" placeholder="{% trans "Your email address" %}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-addon">Title</div>
+                            <input name="Title" type="text" class="form-control" placeholder="{% trans "Your subject" %}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" type="text" rows="3" class="form-control" placeholder="{% trans "You want to say" %}"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <span class="pull-right"><input type="submit" class="form-control" value="{% trans "Submit" %}"></span>
+                    </div>
+                </form>
+            </div>
+            <br>
+            <br>
+        </div>
+
+        <div class="col-md-3">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="list-group">
+                <a href="#history" class="list-group-item"> {% trans "Development history" %} </a>
+                <a href="#join_us" class="list-group-item"> {% trans "Join us" %} </a>
+                <a href="#contact_us" class="list-group-item"> {% trans "Contact us" %} </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

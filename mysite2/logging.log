@@ -1,0 +1,8 @@
+2020-11-05 09:13:08,760 - simple_example - DEBUG - debug message
+2020-11-05 09:13:08,760 - simple_example - INFO - info message
+2020-11-05 09:13:08,760 - simple_example - WARNING - warn message
+2020-11-05 09:13:08,760 - simple_example - ERROR - error message
+2020-11-05 09:13:08,760 - simple_example - CRITICAL - critical message
+2020-11-05 09:13:45,200 - simple_example - WARNING - warn message
+2020-11-05 09:13:45,200 - simple_example - ERROR - error message
+2020-11-05 09:13:45,200 - simple_example - CRITICAL - critical message

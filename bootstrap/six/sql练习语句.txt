@@ -1,0 +1,21 @@
+mysql> create database mysql_study;
+mysql> show databases;
+mysql> drop database mydatabase;
+mysql> use mysql_study;
+mysql> create table contacts
+    -> (
+    -> name char(20) not null,
+    -> number char(13) not null
+    -> );
+mysql> show tables;
+mysql> insert  into contacts
+    -> (name, number)
+    -> values
+    -> ("tony", 13212345678);
+mysql> select * from contacts;
+mysql> insert  into contacts (name, number) values ("tom", 13312345678);
+mysql> delete from contacts where name="tom";
+mysql> update contacts set number=13912345678 where name="tony";
+mysql> insert  into contacts (name, number) values ("tom", 13312345678);
+mysql> insert  into contacts (name, number) values ("daniel", 13312345678);
+mysql> select * from contacts where number=13312345678;

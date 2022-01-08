@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% load i18n %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!--Wrapper for slide-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background:#667886;">
+            <img src="{% static 'img/slide1.jpg' %}" style="margin:auto;" alt="First">
+        </div>
+        <div class="item" style="background:#BCB1B9;">
+            <img src="{% static 'img/slide2.jpg' %}" style="margin:auto;" alt="Second">
+        </div>
+        <div class="item" style="background:#1976D3;">
+            <img src="{% static 'img/slide3.jpg' %}" style="margin:auto;" alt="Third">
+        </div>
+    </div>
+
+    <!--Controllor-->
+    <a class="carousel-control left" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control right" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </a>
+</div>
+
+<div class="container">
+    <h1 class="text-center"> {% trans "What is the maker" %} </h1>
+    <h2 class="text-center"> {% trans "Passion for science and technology group , keen to practice man." %} </h2>
+    <h2 class="text-center"> {% trans "We share technology , share ideas for fun." %} </h2>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/1.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> {% trans "Maker times" %} </h3>
+                    <p>
+                    {% trans "Let us stand on each other's shoulders , the more points higher .Human industrial civilization , commercial civilization , and of course our own , is a dramatic change" %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/2.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> {% trans "Play wonderfully" %} </h3>
+                    <p>
+                    {% trans " Play is a state : relaxed, comfortable and free." %}
+                    {% trans " Play is a practice: continue to mental and physical, but also hands-on ." %}
+                    {% trans " Play is a way of sharing : play with others , it is more interesting , more meaningful." %}
+                    {% trans " Play is a realm : As more and more people join together to play off the record , because the world will play  and change." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/4.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> {% trans "Share happiness" %} </h3>
+                    <p>
+                    {% trans "The share as a pleasure." %}
+                    {% trans "Initiative on the basis of respect for the dissemination of knowledge work together." %}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="media">
+                <a herf="#" class="pull-left"><img src="{% static 'img/5.png' %}" style="margin:20px 20px 20px 20px;"></a>
+                <div class="media-body">
+                    <h3 class="media-heading" style="margin-top:40px"> {% trans "Creative art field" %} </h3>
+                    <p>
+                    {% trans "Electronics, machinery , robotics , 3D printing ......" %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

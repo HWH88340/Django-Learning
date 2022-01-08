@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-Indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!--Wrapper for slide-->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active" style="background:#667886;">
+            <img src="{% static 'img/slide1.jpg' %}" style="margin:auto;" alt="First">
+        </div>
+        <div class="item" style="background:#BCB1B9;">
+            <img src="{% static 'img/slide2.jpg' %}" style="margin:auto;" alt="Second">
+        </div>
+        <div class="item" style="background:#1976D3;">
+            <img src="{% static 'img/slide3.jpg' %}" style="margin:auto;" alt="Third">
+        </div>
+    </div>
+
+    <!--Controllor-->
+    <a class="carousel-Control left" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-Control right" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </a>
+</div>
+
+{% endblock %}

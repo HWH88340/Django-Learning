@@ -1,0 +1,109 @@
+{#<form action="/your_name/" method="post">#}
+{#    {% csrf_token %}#}
+{#    {{ form }}#}
+{#    <table>#}
+{#        {{ form.as_table }}#}
+{#    </table>#}
+{#    {{ form.as_p }}#}
+{#    <ul>{{ form.as_ul }}</ul>#}
+{##}
+{#    <input type="submit" value="提交">#}
+{##}
+{#</form>#}
+
+{{ form.media }}
+
+<form action="/your_name/" method="post">
+    {% csrf_token %}
+
+    {{ form.non_field_errors }}
+    <div class="filedWrapper">
+        {% if form.your_name.errors %}
+            <ol>
+                {% for error in form.your_name.errors %}
+                    <li><strong>{{ error|escape }}</strong></li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+        {{ form.your_name.label_tag }}
+        {{ form.your_name }}
+        {{ form.your_name.help_text }}
+        {{ form.your_name.field.max_length }}
+    </div>
+        <div class="filedWrapper">
+        {{ form.age.errors }}
+        {{ form.age.label_tag }}
+        {{ form.age }}
+    </div>
+    <div class="filedWrapper">
+        {{ form.email.errors }}
+        {{ form.email.label_tag }}
+        {{ form.email }}
+    </div>
+    <div class="filedWrapper">
+        {{ form.birth_year.errors }}
+        {{ form.birth_year.label_tag }}
+        {{ form.birth_year }}
+    </div>
+    <div class="filedWrapper">
+        {{ form.favorite_colors.errors }}
+        {{ form.favorite_colors.label_tag }}
+        {{ form.favorite_colors }}
+    </div>
+    <div class="filedWrapper">
+        {{ form.date.errors }}
+        {{ form.date.label_tag }}
+        {{ form.date }}
+    </div>
+
+
+    <div class="filedWrapper">
+        <input type="hidden"/>
+    </div>
+
+    <input type="submit" value="提交">
+</form>
+
+{#{% csrf_token %}#}
+
+{#function getCookie(name) {#}
+{#    let cookieValue = null;#}
+{#    if (document.cookie && document.cookie !== '') {#}
+{#        const cookies = document.cookie.split(';');#}
+{#        for (let i = 0; i < cookies.length; i++) {#}
+{#            const cookie = cookies[i].trim();#}
+{#            // Does this cookie string begin with the name we want?#}
+{#            if (cookie.substring(0, name.length + 1) === (name + '=')) {#}
+{#                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));#}
+{#                break;#}
+{#            }#}
+{#        }#}
+{#    }#}
+{#    return cookieValue;#}
+{# }#}
+{#const csrftoken = getCookie('csrftoken');#}
+
+{#<script>#}
+{#const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;#}
+{#</script>#}
+{##}
+{#const request = new Request(#}
+{#    /* URL */,#}
+{#    {headers: {'X-CSRFToken': csrftoken}}#}
+{#);#}
+{##}
+{##}
+{#fetch(request, {#}
+{#    method: 'POST',#}
+{#    mode: 'same-origin'  // Do not send CSRF token to another domain.#}
+{# }).then(function(response) {#}
+{#    // ...#}
+{# });#}
+{% load tz %}
+
+{% timezone  request.session.django_timezone %}
+    {% now "jS F Y H:i" %}
+{% endtimezone %}
+
+{#{% load static %}#}
+{#url={% static '/polls/images/background.jpg' %}#}

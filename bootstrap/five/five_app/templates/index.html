@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Index</title>
+    </head>
+    <body>
+    <li>test first filter with {{ list }}: {{ list | first }}</li>
+    <li>test upper filter with {{ word }}: {{ word | upper }}</li>
+    <li>test capfirst filter with {{ str }}: {{ str | capfirst }}</li>
+    {% load myfilter %}
+    <li>test myfilter with {{ list }}: {{ list | myfilter }}</li>
+    </body>
+</html>

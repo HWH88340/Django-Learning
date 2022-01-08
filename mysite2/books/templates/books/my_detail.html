@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>出版社：{{ publisher.name }}</h1>
+    <p>地址：{{ publisher.address }}</p>
+    <p>城市: {{ publisher.city }}</p>
+    <p>省份: {{ publisher.state_province }}</p>
+    <p>国家: {{ publisher.country }}</p>
+    <p>网站: {{ publisher.website }}</p>
+
+    <br/>
+    <h1>下面是所有书籍的列表：</h1>
+    {% for book in book_list %}
+        <p>{{ book.title }}</p>
+        <p>{{ book.authors.values_list }}</p>
+        <p>{{ book.publisher }}</p>
+        <p>{{ book.publication_date }}</p>
+        <br/>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% load i18n %}
+{% block title %} Case {% endblock %}
+
+{% block content %}
+
+<div class="jumbotron"  style="background:#1976D3; color:#CCC;">
+    <div class="container" >
+        <h2> {% trans "Applications" %} </h2>
+        <p>
+        {% trans "Success case of products ......" %}
+        </p>
+    </div>
+</div>
+
+<div class="container" >
+    <h1 class="text-center"> {% trans "Product promotion" %} </h1>
+    <br>
+    <hr>
+    <!--<div class="row">-->
+        <div class="col-md-4">
+            <h4 class="text-center"> {% trans "Unmanned aerial vehicle" %} </h4>
+            <div class="embed-reponsive embed-reponsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/io1QN-jVNj0"></iframe>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-center"> {% trans "3D printer" %} </h4>
+            <div class="embed-reponsive embed-reponsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A2NNVVBZI7A"></iframe>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-center"> {% trans "Arduino" %} </h4>
+            <div class="embed-reponsive embed-reponsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5F054MNB1QI"></iframe>
+            </div>
+        </div>
+    <!--</div>-->
+</div>
+
+<div class="container">
+    <br>
+    <br>
+    <h1 class="text-center"> {% trans "Interesting products" %} </h1>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img5.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3 class="text-center"> {% trans "Four axis aircraft" %} </h3>
+            <p>
+                <br>
+                {% trans "Four axis unmanned aerial vehicles, advanced flight control system, automatic cruise, high-definition camera, hovering." %}
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img1.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3> {% trans "Colorful 3 d printer" %} </h3>
+            <p>
+                <br>
+                {% trans "Print speeds of up to 10 mm/SEC, forming precision high, double color printing." %}
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img4.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3> {% trans "Arduino robot" %} </h3>
+            <p>
+                <br>
+                {% trans "Originated from Italy, universal wheel, automatic tracking, automatic obstacle avoidance, flexible and agile." %}
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img3.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3> {% trans "Arduino main board" %} </h3>
+            <p>
+                <br>
+                {% trans "The sparrow is small all-sided, rich hardware and software resources, easy to learn and easy to use." %}
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
