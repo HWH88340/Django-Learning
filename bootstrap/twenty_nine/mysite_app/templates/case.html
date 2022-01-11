@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %} Case {% endblock %}
+
+{% block content %}
+
+<div class="jumbotron"  style="background:#1976D3; color:#CCC;">
+    <div class="container" >
+        <h2> 产品应用 </h2>
+        <p>
+            成功产品案例……
+        </p>
+    </div>
+</div>
+
+<div class="container" >
+    <h1 class="text-center"> 产品宣传 </h1>
+    <br>
+    <hr>
+    <!--<div class="row">-->
+        <div class="col-md-4">
+            <h4 class="text-center"> 无人机 </h4>
+            <div class="embed-reponsive embed-reponsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/io1QN-jVNj0"></iframe>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-center"> 3D打印机 </h4>
+            <div class="embed-reponsive embed-reponsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A2NNVVBZI7A"></iframe>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-center"> Arduino </h4>
+            <div class="embed-reponsive embed-reponsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5F054MNB1QI"></iframe>
+            </div>
+        </div>
+    <!--</div>-->
+</div>
+
+<div class="container">
+    <br>
+    <br>
+    <h1 class="text-center"> 趣味产品 </h1>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img5.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3 class="text-center"> 四轴飞行器 </h3>
+            <p>
+                <br>
+                四轴无人飞行器，高精尖飞控系统，自动巡航，高清摄像，空中悬停。
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img1.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3> 多彩3D打印机</h3>
+            <p>
+                <br>
+                打印速度高达10mm/秒，成型精确度高，双色打印。
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img4.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3> Arduino机器人 </h3>
+            <p>
+                <br>
+                源自意大利，万向轮，自动循迹，自动避障，灵活敏捷。
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{% static 'img/img3.jpg' %}" class="img-circle center-block"
+            onmouseover="this.style.cssText='transform: scale(1.3) rotate(10deg);'"
+            onmouseout="this.style.cssText='transform: scale(1) rotate(0deg);'">
+        </div>
+        <div class="col-md-6" style="margin-top:40px; text-align:center;">
+            <h3> Arduino主板 </h3>
+            <p>
+                <br>
+                麻雀虽小五脏俱全，丰富的硬件、软件资源，易学易用。
+            </p>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
